@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+
+
+  <!--<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Praxidike</title>
+
+
+</head>
+
+<body>
+  <img src="img/logo2.png" alt="PRAXIDIKE" class="center";>
+  <section>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active" style="background-color: #ebe172; color: #004289;">HOME</a>
+      <a href="shop.html">SHOP</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="link1.html">PAGES</a>
+      <a href="blogs.html">BLOGS</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      <a class='fa fa-shopping-cart' href="#" style="font-size:23px;color:white"></a>
+    </div>
+ 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          } else {
+              x.className = "topnav";
+            }
+        }
+    </script>
+
+
+  </section>
+
+
+<div class="gallery" style="font-size: 0px; position: relative;top: 0px;">
+<img id="myImg" src="img/g1.png" alt="Snow" style="position: relative;top: 0px;width:337px">
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<img id="myImg" src="img/g2.png" alt="Snow" style="position: relative;top: -3px;width: 336px;">
+
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<img id="myImg" src="img/g3.png" alt="Snow" style="position: relative;top: -3px;width:336px">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<img id="myImg" src="img/g4.png" alt="Snow" style="width:336px">
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<div class="g-details">
+  <div class="container">
+<div class="row">
+    </class>
+     <div class="col-md-4">
+     <div class="imgAbt">
+        <img  width="400" height="500" src="img/gp2.jpg" style="position: relative;top: -110px;">
+     </div>
+     </div>
+    <div class="col-md-8" style="position: relative;left: 100px;top: -110px;">
+      <h2 class="founder1">Vestibulum id ligula porta felis euismod semper.</h2>
+      <div class="para3">
+      <p >Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+      </div>
+
+    </div>
+    <button class="buttong" style="position: relative;top: -200px; left: 500px;">VIEW THE COLLECTION</button>
+    </div>
+  </div>
+</div>
+  
+
+  <div class="g-details">
+  <div class="container">
+<div class="row" style="position: relative;top: -200px;">
+    </class>
+     
+    <div class="col-md-8" style="position: relative;left: 10px;top: -70px;">
+      <h2 class="founder1" style="position: relative;padding-right: 200px;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</h2>
+      <div class="para3" style="position: relative;padding-right: 100px;">
+      <p >Vestibulum id ligula porta felis euismod semper. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+      </div>
+
+    </div>
+    <div class="col-md-4">
+     <div class="imgAbt">
+        <img  width="400" height="500" src="img/gp2.jpg" style="position: relative;top: -110px; 
+        left: -70px;">
+     </div>
+     </div>
+    <button class="buttong" style="position: relative;top: -200px; left: 20px;">VIEW THE COLLECTION</button>
+    </div>
+  </div>
+</div>
+  
+
+  <div class="g-details">
+  <div class="container">
+<div class="row" style="position: relative;top: -500px;">
+    </class>
+     <div class="col-md-4">
+     <div class="imgAbt">
+        <img  width="400" height="500" src="img/gp2.jpg" style="position: relative;top: -110px;">
+     </div>
+     </div>
+    <div class="col-md-8" style="position: relative;left: 100px;top: -110px;">
+      <h2 class="founder1">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</h2>
+      <div class="para3">
+      <p >Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+      </div>
+
+    </div>
+    <button class="buttong" style="position: relative;top: -200px; left: 500px;">VIEW THE COLLECTION</button>
+    </div>
+  </div>
+</div>
+
+<div class="g-details" style="height: 0px;">
+  <div class="container">
+<div class="row" style="position: relative;top: -900px;">
+    </class>
+     
+    <div class="col-md-8" style="position: relative;left: 10px;top: -70px;">
+      <h2 class="founder1" style="position: relative;padding-right: 200px;">Maecenas faucibus mollis interdum.</h2>
+      <div class="para3" style="position: relative;padding-right: 100px;">
+      <p >Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper.</p>
+
+      </div>
+
+    </div>
+    <div class="col-md-4">
+     <div class="imgAbt">
+        <img  width="400" height="500" src="img/gp2.jpg" style="position: relative;top: -110px; 
+        left: -70px;">
+     </div>
+     </div>
+    <button class="buttong" href="#" style="position: relative;top: -200px; left: 20px;">VIEW THE COLLECTION</button>
+    </div>
+  </div>
+</div>
+  
+
+<section>
+  <div class="footer">
+    <img class="f-img" src="img/logo-footer.png">
+    <div class="icon">
+      <a href="https://facebook.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://pinterest.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-pinterest"></i>
+      </a>
+      <a href="https://twitter.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <nav class="footer-nav" role="navigation">
+    <p> &copy;
+      <?php echo date("Y"); ?> ARTBEES . ALL RIGHTS RESERVED.</p>
+  </nav>
+  </div>
+
+</section>
+
+</body>
+</html>
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Praxidike</title>
+
+  <style>
+      #zoom-img{
+        width: 400px;
+        height: 438px;
+        background: url("img/2.jpg");
+        position: relative;
+        top: 50px;
+        left: 200px;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+</head>
+<body>
+  <img src="img/logo2.png" alt="PRAXIDIKE" class="center";>
+  <section>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active" style="background-color: #ebe172; color: #004289;">HOME</a>
+      <a href="shop.html">SHOP</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <div class="dropdown">
+        <button class="dropbtn">PAGES 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="link1.html">FULL WIDTH PAGE</a>
+          <a href="link2.html">PAGE WITH LEFT SIDEBAR</a>
+        </div>
+      </div>
+      <a href="blogs.html">BLOGS</a> 
+      <a href="contact.html">CONTACT</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      <a class='fa fa-shopping-cart' href="#" style="font-size:23px;color:white"></a>
+    </div>
+ 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          } else {
+              x.className = "topnav";
+            }
+        }
+    </script>
+  </section>
+  <!--<div class="container">
+  <input type="checkbox" id="zoomCheck">
+  <label for="zoomCheck">
+    <img src="img/product3.jpg" height="450" width="400">
+  </label>
+</div>-->
+<div id="zoom-img"></div>
+<!--<div style="position: relative;top: -350px;left: 400px;font-size: 50px;">🔍</div>-->
+<script>
+var addZoom = function (target) {
+  // FETCH CONTAINER + IMAGE
+  var container = document.getElementById(target),
+      imgsrc = container.currentStyle || window.getComputedStyle(container, false),
+      imgsrc = imgsrc.backgroundImage.slice(4, -1).replace(/"/g, ""),
+      img = new Image();
+
+  // LOAD IMAGE + ATTACH ZOOM
+  img.src = imgsrc;
+  img.onload = function () {
+    var imgWidth = img.naturalWidth,
+        imgHeight = img.naturalHeight,
+        ratio = imgHeight / imgWidth,
+        percentage = ratio * 100 + '%';
+
+    // ZOOM ON MOUSE MOVE
+    container.onmousemove = function (e) {
+      var boxWidth = container.clientWidth,
+          xPos = e.pageX - this.offsetLeft,
+          yPos = e.pageY - this.offsetTop,
+          xPercent = xPos / (boxWidth / 100) + '%',
+          yPercent = yPos / (boxWidth * ratio / 100) + '%';
+
+      Object.assign(container.style, {
+        backgroundPosition: xPercent + ' ' + yPercent,
+        backgroundSize: imgWidth + 'px'
+         });
+    };
+
+    // RESET ON MOUSE LEAVE
+    container.onmouseleave = function (e) {
+      Object.assign(container.style, {
+        backgroundPosition: 'center',
+        backgroundSize: 'cover'
+      });
+    };
+  }
+};
+
+window.addEventListener("load", function(){
+  addZoom("zoom-img");
+});
+</script>
+</body>
+</html>

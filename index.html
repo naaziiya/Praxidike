@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Praxidike</title>
+  <style> 
+      .parallax { 
+        background-image: url("img/parallax.jpg");
+        width: 100%;
+        min-height: 500px;  
+        background-attachment: fixed; 
+        background-color: #909598;
+        background-position: left; 
+        background-repeat: no-repeat; 
+      } 
+  </style> 
+</head>
+<body>
+  <img src="img/logo2.png" alt="PRAXIDIKE" class="center";>
+  <section>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active" style="background-color: #ebe172; color: #004289;">HOME</a>
+      <a href="shop.html">SHOP</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <div class="dropdown">
+        <button class="dropbtn">PAGES 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="link1.html">FULL WIDTH PAGE</a>
+          <a href="link2.html">PAGE WITH LEFT SIDEBAR</a>
+        </div>
+      </div>
+      <a href="blogs.html">BLOGS</a> 
+      <a href="contact.html">CONTACT</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      <a class='fa fa-shopping-cart' href="#" style="font-size:23px;color:white"></a>
+    </div>
+ 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          } else {
+              x.className = "topnav";
+            }
+        }
+    </script>
+
+
+  </section>
+
+<section>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/01 Home.jpg" style="width:100%">
+          <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <img src="img/capture.PNG" style="width:100%">
+        <div class="text"></div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n)
+      {
+      showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n)
+      {
+      showSlides(slideIndex = n);
+      }
+
+    function showSlides(n)
+    {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++)
+      {
+        slides[i].style.display = "none";  
+      }
+    for (i = 0; i < dots.length; i++)
+      {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    function myFunction()
+    {
+      var x = document.getElementById("myTopnav1");
+      if (x.className === "topnav1") {
+      x.className += " responsive";
+      }
+      else
+      {
+        x.className = "topnav1";
+      }
+    }
+  </script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var myTopnav = document.getElementById("myTopnav");
+var sticky = myTopnav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    myTopnav.classList.add("sticky")
+  } else {
+    myTopnav.classList.remove("sticky");
+  }
+}
+</script>
+
+</section>
+
+<section>
+  <div class="row1">
+      
+      <div class="column">
+        <div class="container" style="font-size: 0px;"> 
+         <img src="img/(1).jpg" width="350" height="450" style="border-top-left-radius:20px; border-top-right-radius:20px">
+          <div class="text-block">
+            <h1 style="padding-left: 13px; font-size: 12px;">Sale!</h1>
+          </div>
+        </div>
+
+        <div class=title>
+          <h2 class=title onclick="#"  style="padding-left: 118px;">Aliquam volupat</h2>
+          <del style="padding-left: 115px;">
+            <span>£</span>
+            <span>220.00</span>
+          </del>
+          <span class="price">£ 180.00
+          </span>
+          <br/>
+          <br/>
+      <button class="block">Add to Cart</button>
+
+      </div>
+</div>
+      <div class="column">
+        <div class="container" style="font-size: 0px;"> 
+          <img src="img/2.jpg" width="350" height="450" style="border-top-left-radius:20px; border-top-right-radius:20px">
+          
+        </div>
+        <div class=title>
+          <h2 class=title onclick="#"  style="padding-left: 118px;">Etiam dignissim</h2>
+          <span class="price" style="padding-left: 140px;">£120.00</span>
+          </span>
+          <br/>
+          <br/>
+          <br />
+          <br />
+      <a href="readmore.html" class="block" style="position: relative;top: -35px;text-decoration: none;">Read More</a>
+      </div>
+    </div>
+
+      <div class="column">
+        <div class="container" style="font-size: 0px;">
+          <img src="img/2.jpg" width="350" height="450" style="border-top-left-radius:20px; border-top-right-radius:20px">
+          <div class="text-block">
+            <h4 style="padding-left: 13px; font-size: 12px;">Sale!</h4>
+          </div>
+        </div>
+        <div class=title>
+          <h2 class=title onclick="#"  style="padding-left: 118px;">Ligula Adipiscing</h2>
+          <del style="padding-left: 125px;">
+            <span>£</span>
+            <span>50.00 </span>
+          </del>
+          <span class="price">£40.00
+          </span>
+          </span>
+          <br/>
+          <br/>
+      <button class="block">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="row1">
+
+    <div class="column">
+      <div class="container" style="font-size: 0px;">
+        <img src="img/product3.jpg" width="350" height="450" style="border-top-left-radius:20px; border-top-right-radius:20px">
+        <div class="text-block">
+          <h4 style="padding-left: 13px; font-size: 12px;">Sale!</h4>
+        </div>
+      </div>
+      <div class=title>
+          <h2 class=title onclick="#"  style="padding-left: 118px;">Noushe Jilet</h2>
+          
+          <span class="price" style="padding-left: 140px;">£240.00
+          </span>
+          </span>
+          <br/>
+          <br/>
+      <button class="block">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="column">
+    <div class="container" style="font-size: 0px;">
+      <img src="img/product3.jpg" width="350" height="450" style="border-top-left-radius:20px; border-top-right-radius:20px">
+      <div class="text-block">
+        <h4 style="padding-left: 13px; font-size: 12px;">Sale!</h4>
+      </div>
+    </div>
+    <div class=title>
+          <h2 class=title onclick="#"  style="padding-left: 118px;">Risus Adipiscing</h2>
+          <span class="price" style="padding-left: 140px;">£160.00
+          </span>
+          </span>
+          <br/>
+          <br/>
+      <button class="block">Add to Cart</button>
+      </div>
+  </div>
+
+  <div class="column">
+    <div class="container" style="font-size: 0px;">
+      <img src="img/(1).jpg" width="350" height="450" style="border-top-left-radius:20px; border-top-right-radius:20px">
+      <div class="text-block">
+        <h4 style="padding-left: 13px; font-size: 12px;">Sale!</h4>
+      </div>
+    </div>
+    <div class=title>
+          <h2 class=title onclick="#"  style="padding-left: 118px;">Tellus Ornare
+          </h2>
+          <span class="price"style="padding-left: 140px;">£170.00
+          </span>
+          </span>
+          <br/>
+          <br/>
+      <button class="block">Add to Cart</button>
+      </div>
+  </div>
+
+</div>
+
+</section>
+<br/>
+<br/>
+<br/>
+
+<SECTION>
+  <div class="blueG">
+    <span class="text2"> Start making beautiful templates</span>
+      <div class="text-block2">
+        <a href="index.html" style="text-decoration: none;">VIEW THE COLLECTION</a>
+      </div>
+  </div>
+</SECTION>
+
+<section class="color">
+<div class="parallax">
+  <div class="text3">
+    <h2 class="raven-heading raven-heading-h2">
+      <span class="raven-heading-title">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+    </h2>
+    
+    <br />
+    <br />
+    <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+</div>
+<button class="button1">VIEW THE COLLECTION</button>
+
+ </section>
+
+
+ <section>
+   <div class="clients">
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2 style="font-size: 22px;">IN THE PRESS</h2>
+    <br />
+    <br />
+    <br />
+<ul id="rig">
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/client1.png">
+            <br />
+            <br />
+            <br />
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/client2.png">
+            <br />
+            <br />
+            <br />
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/client3.png">
+            <br />
+            <br />
+            <br />
+  </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/client4.png">
+            <br />
+            <br />
+            <br />
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/client5.png">
+            <br />
+            <br />
+            <br />
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/client6.png">
+            <br />
+            <br />
+            <br />
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/client7.png">
+            <br />
+            <br />
+            <br />
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/client8.png">
+            <br />
+            <br />
+            <br />
+        </a>
+    </li>
+</ul>
+</div>
+</section>
+
+<section>
+  <div class="footer">
+    <img class="f-img" src="img/logo-footer.png">
+    <div class="icon">
+      <a href="https://facebook.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://pinterest.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-pinterest"></i>
+      </a>
+      <a href="https://twitter.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <nav class="footer-nav" role="navigation">
+    <p> &copy;
+      <?php echo date("Y"); ?> ARTBEES . ALL RIGHTS RESERVED.</p>
+  </nav>
+  </div>
+
+</section>
+</body>
+</html> 

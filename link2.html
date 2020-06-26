@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Praxidike</title>
+
+</head>
+
+<body>
+  <img src="img/logo2.png" alt="PRAXIDIKE" class="center";>
+  <section>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">HOME</a>
+      <a href="shop.html">SHOP</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <div class="dropdown">
+        <button class="dropbtn">PAGES 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="link1.html">FULL WIDTH PAGE</a>
+          <a href="link2.html">PAGE WITH LEFT SIDEBAR</a>
+        </div>
+      </div>
+      <a href="blogs.html">BLOGS</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      <a class='fa fa-shopping-cart' href="#" style="font-size:23px;color:white"></a>
+    </div>
+ 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          } else {
+              x.className = "topnav";
+            }
+        }
+    </script>
+</section>
+<section style="background-color: #f7f5f3;">
+
+  <!--<div class="jupiterx-widget-content">
+    <form role="search" method="get">
+      <label class="screen-reader-text">Search for:</label>
+      <input type="search" placeholder="Search products…" value="" name="s">
+      <button type="submit" value="Search"></button> 
+      <input type="hidden" name="post_type" value="product">
+    </form>
+  </div>-->
+  <div class="search-container" >
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search product.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <div class="category">
+    <h3 class="card-title">Product categories</h3>
+    <div class="items">
+      <a href="shop.html" style="text-decoration: none; color: #333;">Boots</a></a>
+    </div>
+    <div class="items">
+      <a href="shop.html" style="text-decoration: none; color: #333;">Leather</a>
+    </div>
+    <div class="items">
+      <a href="shop.html" style="text-decoration: none; color: #333;">Top Boots</a>
+    </div>
+    </div>
+    <div class="category" style="top: 300px; left: -300px;">
+    <h3 class="card-title">Cart</h3>
+
+
+    <div class="widget_shopping_cart_content"></div>
+    <h3>Top rated products</h3>
+    <div>
+    <img src="img/2.jpg" height="80px" width="80px">
+    <span class="product-title"style="left: 10px;top: -65px;position: relative;">Ethiam dignissim</span>
+     <span class="sub-c">£120.00</span>
+   </div>
+   <div>
+     <img src="img/2.jpg" height="80px" width="80px">
+    <span class="product-title"style="left: 10px;top: -65px;position: relative;">Ligula adpiscing</span>
+     <span class="sub-c">
+      <del>£50</del> 
+    </span>
+    <span class="sub-c">£40.00</span>
+   </div>
+   <div>
+    <img src="img/product3.jpg" height="80px" width="80px">
+    <span class="product-title"style="left: 10px;top: -65px;position: relative;">Noushe jilet</span>
+     <span class="sub-c">£240.00</span>
+   </div>
+   <div>
+    <img src="img/product3.jpg" height="80px" width="80px">
+    <span class="product-title"style="left: 10px;top: -65px;position: relative;">Risus adpiscing</span>
+     <span class="sub-c">£160.00</span>
+   </div>
+   <div>
+    <img src="img/(1).jpg" height="80px" width="80px">
+    <span class="product-title"style="left: 10px;top: -65px;position: relative;">Tellus ornare</span>
+     <span class="sub-c">£170.00</span>
+   </div>
+   
+  </div>
+</section>
+
+
+  
+
+
+
+<section style="background-color: white; height: 1200px;">
+<div class="row3" style="position: relative;left: -420px; top: 50px;">
+  <div class="column3" style="width: 10%">
+    <img src="img/1.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column3" style="width: 10%">
+    <img src="img/22.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column3" style="width: 10%">
+    <img src="img/3.jpg" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column3" style="width: 10%">
+    <img src="img/4.jpg" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column3" style="width: 10%">
+    <img src="img/5.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<h1 class="link1-head" style="position: relative;left: 430px; top: -400px;">This is an example of page with right sidebar</h1>
+<p class="link1-para" style="position: relative;left: 430px; top: -350px; padding-right: 500px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros lobortis, vestibulum turpis ac, pulvinar odio. Praesent vulputate a elit ac mollis. In sit amet ipsum turpis. Pellentesque venenatis, libero vel euismod lobortis, mi metus luctus augue, eget dapibus elit nisi eu massa. Phasellus sollicitudin nisl posuere nibh ultricies, et fringilla dui gravida. Donec iaculis adipiscing neque, non congue massa euismod quis. Etiam interdum dolor sit amet justo vulputate, non mollis velit venenatis. Morbi eu nunc nunc. Phasellus lacus magna, dapibus vitae pellentesque sit amet, venenatis ac purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat bibendum diam eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam adipiscing pretium tortor, eget pretium nulla ullamcorper id. Nullam ac nunc at lectus elementum vestibulum sit amet vitae dui. Donec ut gravida lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros lobortis, vestibulum turpis ac, pulvinar odio. Praesent vulputate a elit ac mollis. In sit amet ipsum turpis. Pellentesque venenatis, libero vel euismod lobortis, mi metus luctus augue, eget dapibus elit nisi eu massa. Phasellus sollicitudin nisl posuere nibh ultricies, et fringilla dui gravida. Donec iaculis adipiscing neque, non congue massa euismod quis. Etiam interdum dolor sit amet justo vulputate, non mollis velit venenatis. Morbi eu nunc nunc. Phasellus lacus magna, dapibus vitae pellentesque sit amet, venenatis ac purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat bibendum diam eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam adipiscing pretium tortor, eget pretium nulla ullamcorper id. Nullam ac nunc at lectus elementum vestibulum sit amet vitae dui. Donec ut gravida lorem.<br><br><br>Designing is a matter of concentration. You go deep into what you want to do. It’s about intensive research, really. The concentration is warm and intimate and like the fire inside the earth – intense but not distorted. You can go to a place, really feel it in your heart. It’s actually a beautiful feeling.<br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros lobortis, vestibulum turpis ac, pulvinar odio. Praesent vulputate a elit ac mollis. In sit amet ipsum turpis. Pellentesque venenatis, libero vel euismod lobortis, mi metus luctus augue, eget dapibus elit nisi eu massa. Phasellus sollicitudin nisl posuere nibh ultricies, et fringilla dui gravida. Donec iaculis adipiscing neque, non congue massa euismod quis. Etiam interdum dolor sit amet justo vulputate, non mollis velit venenatis. Morbi eu nunc nunc. Phasellus lacus magna, dapibus vitae pellentesque sit amet, venenatis ac purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat bibendum diam eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam adipiscing pretium tortor, eget pretium nulla ullamcorper id. Nullam ac nunc at lectus elementum vestibulum sit amet vitae dui. Donec ut gravida lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis eros lobortis, vestibulum turpis ac, pulvinar odio. Praesent vulputate a elit ac mollis. In sit amet ipsum turpis. Pellentesque venenatis, libero vel euismod lobortis, mi metus luctus augue, eget dapibus elit nisi eu massa. Phasellus sollicitudin nisl posuere nibh ultricies, et fringilla dui gravida. Donec iaculis adipiscing neque, non congue massa euismod quis. Etiam interdum dolor sit amet justo vulputate, non mollis velit venenatis. Morbi eu nunc nunc. Phasellus lacus magna, dapibus vitae pellentesque sit amet, venenatis ac purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat bibendum diam eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam adipiscing pretium tortor, eget pretium nulla ullamcorper id. Nullam ac nunc at lectus elementum vestibulum sit amet vitae dui. Donec ut gravida lorem.</p>
+</section>
+
+<section>
+  <div class="footer" >
+    <img class="f-img" src="img/logo-footer.png">
+    <div class="icon">
+      <a href="https://facebook.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://pinterest.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-pinterest"></i>
+      </a>
+      <a href="https://twitter.com/artbees/" style="text-decoration: none;">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <nav class="footer-nav" role="navigation">
+    <p> &copy;
+      <?php echo date("Y"); ?> ARTBEES . ALL RIGHTS RESERVED.</p>
+  </nav>
+  </div>
+
+</section>
+
+</body>
+</html>
